@@ -1,6 +1,12 @@
 import React from 'react'
-import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableOpacity, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+
+const test = `یہ مذاکرات ہفتہ کو ہونا تھے لیکن اسے صبح تک ملتوی کر دیا گیا۔ دونوں جماعتوں نے جلد مذاکرات کرنے پر اتفاق کیا ہے۔
+
+اس بات چیت میں سربراہی اجلاس پر بھی اتفاق کیا گیا ہے۔
+
+باخبر سیاسی ذرائع نے دی نیوز کو بتایا کہ قومی اسمبلی کے تین آزاد ارکان کی شمولیت اور ہفتہ کی شام کراچی سے لاہور مذاکرات کے لیے ایم کیو ایم پاکستان کے اعلیٰ سطحی وفد کی شمولیت نے مسلم لیگ (ن) کو اخلاقی تقویت فراہم کی ہے۔`
 
 const ExtractedText = () => {
   return (
@@ -15,11 +21,12 @@ const ExtractedText = () => {
 
           <View style={styles.innerInnerBox}>
 
-            <View style={{ alignItems: 'center', }}>
-              <Image
-                source={require('./../../assets/images/inner-extractedtextscreen.png')}
-                style={styles.previewImage}
-                resizeMode="contain"
+
+            <View style={styles.innerTextContainer}>
+              <TextInput
+                style={styles.previewText}
+                value={test}
+                multiline
               />
             </View>
 
@@ -35,19 +42,19 @@ const ExtractedText = () => {
 
 
             <View style={styles.buttonContainer}>
-              <TouchableOpacity style={styles.buttonTextAudio}>
+              <View style={styles.buttonTextAudio}>
                 <Text style={styles.buttonText}>Text Audio</Text>
                 <View style={styles.playPauseContainer}>
                   <TouchableOpacity style={styles.playPauseButton}>
                     {/* Your Play Icon */}
-                    <Icon name="play-circle" size={20} color="#FFFFFF" />
+                    <Icon name="play-circle" size={25} color="#FFFFFF" />
                   </TouchableOpacity>
                   <TouchableOpacity style={styles.playPauseButton}>
                     {/* Your Pause Icon */}
-                    <Icon name="pause-circle" size={20} color="#FFFFFF" />
+                    <Icon name="pause-circle" size={25} color="#FFFFFF" />
                   </TouchableOpacity>
                 </View>
-              </TouchableOpacity>
+              </View>
             </View>
 
 
@@ -106,14 +113,24 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   innerInnerBox: {
+    display: 'flex',
+    flexDirection: 'column',
     backgroundColor: '#DEF9FF',
     height: 100,
     borderRadius: 16,
-    padding: 15,
+    padding: 10,
   },
-  previewImage: {
-    width: 420,
-    height: 420,
+  innerTextContainer: {
+    display: 'flex',
+    backgroundColor: '#fff',
+    height: 350,
+    padding: 15,
+    borderRadius: 16,
+  },
+  previewText: {
+    // width: '100%',
+    color: '#000',
+    // height: 420,
   },
   buttonRow: {
     flexDirection: 'row',
@@ -141,7 +158,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 20,
+    marginTop: 15,
   },
   playPauseContainer: {
     flexDirection: 'row',

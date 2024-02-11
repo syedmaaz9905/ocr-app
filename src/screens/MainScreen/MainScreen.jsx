@@ -97,7 +97,7 @@ const MainScreen = ({ navigation }) => {
           </View>
 
           {/* Second row */}
-          <View style={{ alignItems: 'center', marginTop: 25 }}>
+          <View style={{ alignItems: 'center', marginTop: 15 }}>
             <Text style={{ fontSize: 14, fontFamily: 'Inter', fontWeight: '400', color: '#000000' }}>Dont have an image? Try these.</Text>
           </View>
 
@@ -199,6 +199,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   innerBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
     backgroundColor: '#F0FCFF',
     width: '95%',
     height: '97%',
@@ -209,14 +212,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 5,
   },
   imageColumn: {
     alignItems: 'center',
   },
   innerImageFirstRow: {
     width: 120,
-    height: 120,
+    height: 100,
     margin: 10,
   },
   imageText: {

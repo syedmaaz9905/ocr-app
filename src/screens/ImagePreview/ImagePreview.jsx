@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
-const ImagePreview = ({navigation}) => {
+const ImagePreview = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* Dotted box with white content */}
@@ -13,13 +13,24 @@ const ImagePreview = ({navigation}) => {
           </View>
 
           <View style={styles.innerInnerBox}>
-            <View style={{ alignItems: 'center', }}>
+
+            <View style={styles.previewImageContainer}>
               <Image
                 source={require('./../../assets/images/imagepreviewscreen.png')}
                 style={styles.previewImage}
                 resizeMode="contain"
               />
             </View>
+
+            {/* <View style={styles.previewImageContainer}>
+              <Image
+                source={require('./../../assets/images/imagepreviewscreen.png')}
+                style={styles.previewImage}
+                resizeMode="contain"
+              />
+            </View> */}
+
+
 
             <View style={styles.buttonContainer}>
               <TouchableOpacity
@@ -50,8 +61,6 @@ const ImagePreview = ({navigation}) => {
                 <Text style={styles.buttonTextSecond}>Reject</Text>
               </TouchableOpacity>
             </View>
-
-
           </View>
 
         </View>
@@ -84,17 +93,34 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   innerInnerBox: {
+    display: 'flex',
+    flexDirection: 'column',
     backgroundColor: '#DEF9FF',
     height: 100,
     borderRadius: 16,
-    padding: 15,
+    padding: 10,
+  },
+  previewImageContainer: {
+    backgroundColor: '#fff',
+    width: '100%',
+    height: 400,
+    // height: '100%',
+    borderRadius: 16,
   },
   previewImage: {
-    width: 480,
-    height: 480,
+    width: '100%',
+    height: '100%',
   },
+  // previewImageContainer: {
+  //   width: '100%',
+  //   display: 'flex',
+  //   alignItems: 'center',
+  // },
+  // previewImage: {
+  //   width: 100,
+  // },
   buttonContainer: {
-    marginTop: 20,
+    marginTop: 10,
     alignItems: 'center',
   },
   buttonFirst: {
