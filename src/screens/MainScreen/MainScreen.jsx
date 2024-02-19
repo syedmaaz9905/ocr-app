@@ -1,5 +1,9 @@
 import React, { useRef, useEffect } from 'react';
-import { StyleSheet, View, Text, Image, Animated } from 'react-native';
+import { StyleSheet, View, Text, Image, Animated, TouchableOpacity } from 'react-native';
+import RNFetchBlob from "rn-fetch-blob";
+import RNFS from 'react-native-fs';
+import ImgToBase64 from 'react-native-image-base64';
+import Toast from 'react-native-simple-toast';
 
 const MainScreen = ({ navigation }) => {
   const fadeInFromTopAnimation = useRef(new Animated.Value(0)).current;
@@ -35,6 +39,59 @@ const MainScreen = ({ navigation }) => {
     ]).start();
   }, [fadeInFromLeft, fadeInFromBottom, fadeInFromRight]);
 
+
+
+
+
+
+  // const folderPath = RNFS.DocumentDirectoryPath + "/assets/suggestionfirst.png";
+  // function testingFunction() {
+  //   const DEFAULT_IMAGE = folderPath;
+  //   console.log("HERE")
+  //   console.log(DEFAULT_IMAGE)
+  //   ImgToBase64.getBase64String(DEFAULT_IMAGE)
+  //     .then((base64String) => {
+  //       let base_64_data = `data:image/png;base64,${base64String}`;
+  //       console.log(base_64_data);
+  //       Toast.show("working", Toast.LONG);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       Toast.show(err.message, Toast.LONG);
+  //     });
+  // }
+
+  function testingFunction() {
+    let imagePath = null;
+    RNFetchBlob.config({
+      fileCache: true
+    })
+      .fetch("GET", "https://res.cloudinary.com/dbebwo8jx/image/upload/v1708110710/ihnvuujjdzpwuaishdtj.jpg")
+
+      .then(resp => {
+        imagePath = resp.path();
+        // console.log(resp)
+
+        return resp.readFile("base64");
+      })
+      .then(base64Data => {
+        let base_64_data = `data:image/png;base64,${base64Data}`;
+        console.log(base_64_data);
+
+        Toast.show("working", Toast.LONG);
+        // navigation.navigate('ImagePreview', {image: base_64_data})
+        // console.log(base64Data);
+
+        // return fs.unlink(imagePath);
+      });
+  }
+
+
+
+
+
+
+
   return (
     <View style={styles.container}>
 
@@ -53,7 +110,7 @@ const MainScreen = ({ navigation }) => {
         ]}
       >
         <Image
-          source={require('./../../assets/images/dastaan-mainscreen.png')}
+          source={require('./../../assets/images/dastaanmainscreen.png')}
           style={styles.image}
           resizeMode="contain"
         />
@@ -68,7 +125,7 @@ const MainScreen = ({ navigation }) => {
             {/* First Image */}
             <View style={styles.imageColumn}>
               <Image
-                source={require('./../../assets/images/frame-camera.png')}
+                source={require('./../../assets/images/framecamera.png')}
                 style={styles.innerImageFirstRow}
                 resizeMode="contain"
               />
@@ -83,7 +140,7 @@ const MainScreen = ({ navigation }) => {
             {/* Second Image */}
             <View style={styles.imageColumn}>
               <Image
-                source={require('./../../assets/images/frame-gallery.png')}
+                source={require('./../../assets/images/framegallery.png')}
                 style={styles.innerImageFirstRow}
                 resizeMode="contain"
               />
@@ -103,14 +160,19 @@ const MainScreen = ({ navigation }) => {
 
           {/* Third row */}
           <View style={styles.imageRow}>
-            <Image
-              source={require('./../../assets/images/suggestion-first.png')}
-              style={styles.innerImageThirdRow}
-              resizeMode="contain"
-            />
+            <TouchableOpacity onPress={() => {
+              testingFunction();
+            }}>
+              <Image
+                // source={require('./../../assets/images/suggestionfirst.png')}
+                source={{ uri: 'https://res.cloudinary.com/dbebwo8jx/image/upload/v1708110710/ihnvuujjdzpwuaishdtj.jpg' }}
+                style={styles.innerImageThirdRow}
+                resizeMode="contain"
+              />
+            </TouchableOpacity>
 
             <Image
-              source={require('./../../assets/images/suggestion-second.png')}
+              source={require('./../../assets/images/suggest_first.jpg')}
               style={styles.innerImageThirdRow}
               resizeMode="contain"
             />
@@ -120,7 +182,7 @@ const MainScreen = ({ navigation }) => {
           <View style={styles.imageRow}>
             {/* First Logo */}
             <Animated.Image
-              source={require('./../../assets/images/NEDUET-logo.png')}
+              source={require('./../../assets/images/neduetlogo.png')}
               style={[
                 styles.innerImageFourthRow,
                 {
@@ -137,7 +199,7 @@ const MainScreen = ({ navigation }) => {
 
             {/* Second Logo */}
             <Animated.Image
-              source={require('./../../assets/images/NCL-logo.png')}
+              source={require('./../../assets/images/ncllogo.png')}
               style={[
                 styles.innerImageFourthRow,
                 {
@@ -154,7 +216,7 @@ const MainScreen = ({ navigation }) => {
 
             {/* Third Logo */}
             <Animated.Image
-              source={require('./../../assets/images/ATUP-logo.png')}
+              source={require('./../../assets/images/atuplogo.png')}
               style={[
                 styles.innerImageFourthRow,
                 {
@@ -212,7 +274,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 5,
+    marginBottom: 7,
+    marginTop: 10,
   },
   imageColumn: {
     alignItems: 'center',
@@ -228,10 +291,18 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#000000',
   },
+  // innerImageThirdRowMain: {
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   justifyContent: 'center',
+  //   width: 130,
+  //   height: 150,
+  //   backgroundColor: '#fff',
+  // },
   innerImageThirdRow: {
-    width: 140,
-    height: 200,
-    marginHorizontal: 10,
+    width: 100,
+    height: 150,
+    marginHorizontal: 20,
   },
   innerImageFourthRow: {
     width: 75,

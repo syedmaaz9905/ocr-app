@@ -40,7 +40,7 @@ const ImagePreview = ({ navigation }) => {
                 }}
               >
                 <Image
-                  source={require('./../../assets/images/button-get-text.png')}
+                  source={require('./../../assets/images/buttongettext.png')}
                   style={styles.buttonImageFirst}
                   resizeMode="contain"
                 />
@@ -54,7 +54,7 @@ const ImagePreview = ({ navigation }) => {
                 }}
               >
                 <Image
-                  source={require('./../../assets/images/button-cross.png')}
+                  source={require('./../../assets/images/buttoncross.png')}
                   style={styles.buttonImageSecond}
                   resizeMode="contain"
                 />

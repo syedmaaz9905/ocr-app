@@ -14,6 +14,30 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-OCR-OCRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-OCR-OCRTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		DEDBF59ADE15420CB0A093BB /* atuplogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AADA3BF4CC284039ADA106D0 /* atuplogo.png */; };
+		9AFC9BC099664A19B00FC363 /* buttoncross.png in Resources */ = {isa = PBXBuildFile; fileRef = DB125756A2AD447B86D265CA /* buttoncross.png */; };
+		BD2F527547B3408AAA8D3469 /* buttonexit.png in Resources */ = {isa = PBXBuildFile; fileRef = 515C2210B9B74A6F9A065CF6 /* buttonexit.png */; };
+		CE1AD42B512E442A8877C9CB /* buttongettext.png in Resources */ = {isa = PBXBuildFile; fileRef = 282A3AD5B5A94E36A5D8A263 /* buttongettext.png */; };
+		53551C42F8C44EB8BBB83C39 /* buttonhome.png in Resources */ = {isa = PBXBuildFile; fileRef = EEDF8C4A65164A93B6B3C9BB /* buttonhome.png */; };
+		40B5471F8AEF4BA3A3669968 /* dastaanmainscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0D0F7F53F04537B63702C1 /* dastaanmainscreen.png */; };
+		CD1C33300FB144EC8BC0C1FD /* dastanromanurdu.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A39B27324264786BBDA200F /* dastanromanurdu.png */; };
+		D908813E4BA240269B485619 /* dastansplashfirst.png in Resources */ = {isa = PBXBuildFile; fileRef = DBBDBEED57684FF5B70B9B03 /* dastansplashfirst.png */; };
+		EAF893A8B4DA466F8F7876FC /* dastansplashsecond.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7077E4DDC44C5E9401BD81 /* dastansplashsecond.png */; };
+		2470A2CB6278406992FCDA04 /* dastanurdu.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD9C48B5E0E4097ADFD8937 /* dastanurdu.png */; };
+		BE057134F60E4A449C00D086 /* extractscreeninner.png in Resources */ = {isa = PBXBuildFile; fileRef = BD111A755500453F962EE6BF /* extractscreeninner.png */; };
+		64B02715D7A74509B9B833E6 /* framecamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C3BB68BEA364AA6A9B94676 /* framecamera.png */; };
+		6B5A8F4D344540C6B5A24E29 /* framegallery.png in Resources */ = {isa = PBXBuildFile; fileRef = 050CCCFDF90B4E0F930CD7E0 /* framegallery.png */; };
+		6A22B627497941DC8550F5AB /* imagepreviewscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 910979E81A3946AFB2F4A496 /* imagepreviewscreen.png */; };
+		2CC579018A62494A93525F0C /* innerextractedtextscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B034476334047BED08FF5 /* innerextractedtextscreen.png */; };
+		4DFA9A7E57C2409AB7D1C27A /* leftbottombg.png in Resources */ = {isa = PBXBuildFile; fileRef = 926BB18A19A742CA818D615C /* leftbottombg.png */; };
+		020183F1D33F47C890C79652 /* ncllogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7B2BBEA83314C80B143811B /* ncllogo.png */; };
+		A202B7D5E83A4B99B8A15C00 /* neduetlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00228C39FA7D4EAA93809030 /* neduetlogo.png */; };
+		597AD366B4C046C18F88F27B /* righttopbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C4E9A4D05B7421D834F00AF /* righttopbg.png */; };
+		D478C741977F471191E3134C /* suggestionfirst.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FAD7EEA39AE4FC6B69BEA37 /* suggestionfirst.png */; };
+		94CA37B22C8B42E6BC9616AB /* suggestionsecond.png in Resources */ = {isa = PBXBuildFile; fileRef = E83098D8C5054F258447016B /* suggestionsecond.png */; };
+		109BCB02686D44FD9BB910D9 /* splash_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC484B05920D4B9CAE4944ED /* splash_video.mp4 */; };
+		A109E017583E458ABC98BEA7 /* splash_video_new.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDA8FB5736244E1296D32E54 /* splash_video_new.mp4 */; };
+		FC246E5E1A0E436787FA74F1 /* extractscreeninnertext.png in Resources */ = {isa = PBXBuildFile; fileRef = F90C71078BE0441CAC8FFA8C /* extractscreeninnertext.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +68,30 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = OCR/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-OCR-OCRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-OCRTests.release.xcconfig"; path = "Target Support Files/Pods-OCR-OCRTests/Pods-OCR-OCRTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		AADA3BF4CC284039ADA106D0 /* atuplogo.png */ = {isa = PBXFileReference; name = "atuplogo.png"; path = "../src/assets/images/atuplogo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB125756A2AD447B86D265CA /* buttoncross.png */ = {isa = PBXFileReference; name = "buttoncross.png"; path = "../src/assets/images/buttoncross.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		515C2210B9B74A6F9A065CF6 /* buttonexit.png */ = {isa = PBXFileReference; name = "buttonexit.png"; path = "../src/assets/images/buttonexit.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		282A3AD5B5A94E36A5D8A263 /* buttongettext.png */ = {isa = PBXFileReference; name = "buttongettext.png"; path = "../src/assets/images/buttongettext.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EEDF8C4A65164A93B6B3C9BB /* buttonhome.png */ = {isa = PBXFileReference; name = "buttonhome.png"; path = "../src/assets/images/buttonhome.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6E0D0F7F53F04537B63702C1 /* dastaanmainscreen.png */ = {isa = PBXFileReference; name = "dastaanmainscreen.png"; path = "../src/assets/images/dastaanmainscreen.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A39B27324264786BBDA200F /* dastanromanurdu.png */ = {isa = PBXFileReference; name = "dastanromanurdu.png"; path = "../src/assets/images/dastanromanurdu.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DBBDBEED57684FF5B70B9B03 /* dastansplashfirst.png */ = {isa = PBXFileReference; name = "dastansplashfirst.png"; path = "../src/assets/images/dastansplashfirst.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A7077E4DDC44C5E9401BD81 /* dastansplashsecond.png */ = {isa = PBXFileReference; name = "dastansplashsecond.png"; path = "../src/assets/images/dastansplashsecond.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BCD9C48B5E0E4097ADFD8937 /* dastanurdu.png */ = {isa = PBXFileReference; name = "dastanurdu.png"; path = "../src/assets/images/dastanurdu.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD111A755500453F962EE6BF /* extractscreeninner.png */ = {isa = PBXFileReference; name = "extractscreeninner.png"; path = "../src/assets/images/extractscreeninner.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C3BB68BEA364AA6A9B94676 /* framecamera.png */ = {isa = PBXFileReference; name = "framecamera.png"; path = "../src/assets/images/framecamera.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		050CCCFDF90B4E0F930CD7E0 /* framegallery.png */ = {isa = PBXFileReference; name = "framegallery.png"; path = "../src/assets/images/framegallery.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		910979E81A3946AFB2F4A496 /* imagepreviewscreen.png */ = {isa = PBXFileReference; name = "imagepreviewscreen.png"; path = "../src/assets/images/imagepreviewscreen.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D4B034476334047BED08FF5 /* innerextractedtextscreen.png */ = {isa = PBXFileReference; name = "innerextractedtextscreen.png"; path = "../src/assets/images/innerextractedtextscreen.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		926BB18A19A742CA818D615C /* leftbottombg.png */ = {isa = PBXFileReference; name = "leftbottombg.png"; path = "../src/assets/images/leftbottombg.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F7B2BBEA83314C80B143811B /* ncllogo.png */ = {isa = PBXFileReference; name = "ncllogo.png"; path = "../src/assets/images/ncllogo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		00228C39FA7D4EAA93809030 /* neduetlogo.png */ = {isa = PBXFileReference; name = "neduetlogo.png"; path = "../src/assets/images/neduetlogo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C4E9A4D05B7421D834F00AF /* righttopbg.png */ = {isa = PBXFileReference; name = "righttopbg.png"; path = "../src/assets/images/righttopbg.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0FAD7EEA39AE4FC6B69BEA37 /* suggestionfirst.png */ = {isa = PBXFileReference; name = "suggestionfirst.png"; path = "../src/assets/images/suggestionfirst.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E83098D8C5054F258447016B /* suggestionsecond.png */ = {isa = PBXFileReference; name = "suggestionsecond.png"; path = "../src/assets/images/suggestionsecond.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC484B05920D4B9CAE4944ED /* splash_video.mp4 */ = {isa = PBXFileReference; name = "splash_video.mp4"; path = "../src/assets/videos/splash_video.mp4"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDA8FB5736244E1296D32E54 /* splash_video_new.mp4 */ = {isa = PBXFileReference; name = "splash_video_new.mp4"; path = "../src/assets/videos/splash_video_new.mp4"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F90C71078BE0441CAC8FFA8C /* extractscreeninnertext.png */ = {isa = PBXFileReference; name = "extractscreeninnertext.png"; path = "../src/assets/images/extractscreeninnertext.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +170,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				C67022E5A84A472EA5ED214D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +196,38 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		C67022E5A84A472EA5ED214D /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				AADA3BF4CC284039ADA106D0 /* atuplogo.png */,
+				DB125756A2AD447B86D265CA /* buttoncross.png */,
+				515C2210B9B74A6F9A065CF6 /* buttonexit.png */,
+				282A3AD5B5A94E36A5D8A263 /* buttongettext.png */,
+				EEDF8C4A65164A93B6B3C9BB /* buttonhome.png */,
+				6E0D0F7F53F04537B63702C1 /* dastaanmainscreen.png */,
+				3A39B27324264786BBDA200F /* dastanromanurdu.png */,
+				DBBDBEED57684FF5B70B9B03 /* dastansplashfirst.png */,
+				3A7077E4DDC44C5E9401BD81 /* dastansplashsecond.png */,
+				BCD9C48B5E0E4097ADFD8937 /* dastanurdu.png */,
+				BD111A755500453F962EE6BF /* extractscreeninner.png */,
+				6C3BB68BEA364AA6A9B94676 /* framecamera.png */,
+				050CCCFDF90B4E0F930CD7E0 /* framegallery.png */,
+				910979E81A3946AFB2F4A496 /* imagepreviewscreen.png */,
+				0D4B034476334047BED08FF5 /* innerextractedtextscreen.png */,
+				926BB18A19A742CA818D615C /* leftbottombg.png */,
+				F7B2BBEA83314C80B143811B /* ncllogo.png */,
+				00228C39FA7D4EAA93809030 /* neduetlogo.png */,
+				7C4E9A4D05B7421D834F00AF /* righttopbg.png */,
+				0FAD7EEA39AE4FC6B69BEA37 /* suggestionfirst.png */,
+				E83098D8C5054F258447016B /* suggestionsecond.png */,
+				FC484B05920D4B9CAE4944ED /* splash_video.mp4 */,
+				BDA8FB5736244E1296D32E54 /* splash_video_new.mp4 */,
+				F90C71078BE0441CAC8FFA8C /* extractscreeninnertext.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +324,30 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				DEDBF59ADE15420CB0A093BB /* atuplogo.png in Resources */,
+				9AFC9BC099664A19B00FC363 /* buttoncross.png in Resources */,
+				BD2F527547B3408AAA8D3469 /* buttonexit.png in Resources */,
+				CE1AD42B512E442A8877C9CB /* buttongettext.png in Resources */,
+				53551C42F8C44EB8BBB83C39 /* buttonhome.png in Resources */,
+				40B5471F8AEF4BA3A3669968 /* dastaanmainscreen.png in Resources */,
+				CD1C33300FB144EC8BC0C1FD /* dastanromanurdu.png in Resources */,
+				D908813E4BA240269B485619 /* dastansplashfirst.png in Resources */,
+				EAF893A8B4DA466F8F7876FC /* dastansplashsecond.png in Resources */,
+				2470A2CB6278406992FCDA04 /* dastanurdu.png in Resources */,
+				BE057134F60E4A449C00D086 /* extractscreeninner.png in Resources */,
+				64B02715D7A74509B9B833E6 /* framecamera.png in Resources */,
+				6B5A8F4D344540C6B5A24E29 /* framegallery.png in Resources */,
+				6A22B627497941DC8550F5AB /* imagepreviewscreen.png in Resources */,
+				2CC579018A62494A93525F0C /* innerextractedtextscreen.png in Resources */,
+				4DFA9A7E57C2409AB7D1C27A /* leftbottombg.png in Resources */,
+				020183F1D33F47C890C79652 /* ncllogo.png in Resources */,
+				A202B7D5E83A4B99B8A15C00 /* neduetlogo.png in Resources */,
+				597AD366B4C046C18F88F27B /* righttopbg.png in Resources */,
+				D478C741977F471191E3134C /* suggestionfirst.png in Resources */,
+				94CA37B22C8B42E6BC9616AB /* suggestionsecond.png in Resources */,
+				109BCB02686D44FD9BB910D9 /* splash_video.mp4 in Resources */,
+				A109E017583E458ABC98BEA7 /* splash_video_new.mp4 in Resources */,
+				FC246E5E1A0E436787FA74F1 /* extractscreeninnertext.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

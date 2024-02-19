@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Text, Image, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, View, Text, Image, TouchableOpacity, TextInput, SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const test = `یہ مذاکرات ہفتہ کو ہونا تھے لیکن اسے صبح تک ملتوی کر دیا گیا۔ دونوں جماعتوں نے جلد مذاکرات کرنے پر اتفاق کیا ہے۔
@@ -19,70 +19,71 @@ const ExtractedText = () => {
             <Text style={{ fontSize: 18, fontFamily: 'Inter', fontWeight: '400', color: '#000000' }}>Image Preview</Text>
           </View>
 
-          <View style={styles.innerInnerBox}>
+          <SafeAreaView>
+            <View style={styles.innerInnerBox}>
 
 
-            <View style={styles.innerTextContainer}>
-              <TextInput
-                style={styles.previewText}
-                value={test}
-                multiline
-              />
-            </View>
+              <View style={styles.innerTextContainer}>
+                <TextInput
+                  style={styles.previewText}
+                  value={test}
+                  multiline
+                />
+              </View>
 
-
-            <View style={styles.buttonRow}>
-              <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Copy Text</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>Download</Text>
-              </TouchableOpacity>
-            </View>
-
-
-            <View style={styles.buttonContainer}>
-              <View style={styles.buttonTextAudio}>
-                <Text style={styles.buttonText}>Text Audio</Text>
-                <View style={styles.playPauseContainer}>
-                  <TouchableOpacity style={styles.playPauseButton}>
-                    {/* Your Play Icon */}
-                    <Icon name="play-circle" size={25} color="#FFFFFF" />
+              <View style={{display: 'flex', flexDirection: 'column'}}>
+                <View style={styles.buttonRow}>
+                  <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText}>Copy Text</Text>
                   </TouchableOpacity>
-                  <TouchableOpacity style={styles.playPauseButton}>
-                    {/* Your Pause Icon */}
-                    <Icon name="pause-circle" size={25} color="#FFFFFF" />
+                  <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText}>Download</Text>
                   </TouchableOpacity>
                 </View>
+
+                <View style={styles.buttonContainer}>
+                  <View style={styles.buttonTextAudio}>
+                    <Text style={styles.buttonText}>Text Audio</Text>
+                    <View style={styles.playPauseContainer}>
+                      <TouchableOpacity style={styles.playPauseButton}>
+                        {/* Your Play Icon */}
+                        <Icon name="play-circle" size={25} color="#FFFFFF" />
+                      </TouchableOpacity>
+                      <TouchableOpacity style={styles.playPauseButton}>
+                        {/* Your Pause Icon */}
+                        <Icon name="pause-circle" size={25} color="#FFFFFF" />
+                      </TouchableOpacity>
+                    </View>
+                  </View>
+                </View>
+
+
+                <View style={styles.buttonRow}>
+                  <TouchableOpacity
+                    style={styles.buttonFirst}>
+                    <Image
+                      source={require('./../../assets/images/buttonhome.png')}
+                      style={styles.buttonImageFirst}
+                      resizeMode="contain"
+                    />
+                    <Text style={styles.buttonTextFirst}>Home</Text>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity
+                    style={styles.buttonSecond}>
+                    <Image
+                      source={require('./../../assets/images/buttonexit.png')}
+                      style={styles.buttonImageSecond}
+                      resizeMode="contain"
+                    />
+                    <Text style={styles.buttonTextSecond}>Exit</Text>
+                  </TouchableOpacity>
+                </View>
+
               </View>
+
             </View>
-
-
-            <View style={styles.buttonRow}>
-              <TouchableOpacity
-                style={styles.buttonFirst}>
-                <Image
-                  source={require('./../../assets/images/button-home.png')}
-                  style={styles.buttonImageFirst}
-                  resizeMode="contain"
-                />
-                <Text style={styles.buttonTextFirst}>Home</Text>
-              </TouchableOpacity>
-
-              <TouchableOpacity
-                style={styles.buttonSecond}>
-                <Image
-                  source={require('./../../assets/images/button-exit.png')}
-                  style={styles.buttonImageSecond}
-                  resizeMode="contain"
-                />
-                <Text style={styles.buttonTextSecond}>Exit</Text>
-              </TouchableOpacity>
-            </View>
-
-
-          </View>
-
+          </SafeAreaView>
         </View>
       </View>
     </View>
@@ -116,7 +117,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     backgroundColor: '#DEF9FF',
-    height: 100,
+    height: '95%',
     borderRadius: 16,
     padding: 10,
   },
@@ -126,6 +127,7 @@ const styles = StyleSheet.create({
     height: 350,
     padding: 15,
     borderRadius: 16,
+    flex: 1
   },
   previewText: {
     // width: '100%',
@@ -140,7 +142,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#7B7B7B',
     borderRadius: 10,
-    padding: 10,
+    padding: 7,
     width: '47%',
     alignItems: 'center',
   },
@@ -153,7 +155,7 @@ const styles = StyleSheet.create({
   buttonTextAudio: {
     backgroundColor: '#C1C1C1',
     borderRadius: 10,
-    padding: 10,
+    padding: 7,
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -169,7 +171,7 @@ const styles = StyleSheet.create({
   buttonFirst: {
     backgroundColor: '#7B7B7B',
     borderRadius: 10,
-    padding: 10,
+    padding: 7,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -192,7 +194,7 @@ const styles = StyleSheet.create({
   buttonSecond: {
     backgroundColor: '#EF3B3B',
     borderRadius: 10,
-    padding: 10,
+    padding: 7,
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',

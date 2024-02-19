@@ -49,7 +49,7 @@ const SplashScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Animated.Image
-        source={require('./../../assets/images/right-top-bg.png')}
+        source={require('./../../assets/images/righttopbg.png')}
         style={[
           styles.image,
           { alignSelf: 'flex-end', transform: [{ translateX: slideInFromRight }], opacity: fadeAnimTopImage },
@@ -68,7 +68,7 @@ const SplashScreen = ({ navigation }) => {
 
 
       <Animated.Image
-        source={require('./../../assets/images/left-bottom-bg.png')}
+        source={require('./../../assets/images/leftbottombg.png')}
         style={[
           styles.image,
           { transform: [{ translateX: slideInFromLeft }] },

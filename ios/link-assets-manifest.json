@@ -1,0 +1,101 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/images/atuplogo.png",
+      "sha1": "0e460317149cc534df0c7e9e461b446b979d3dd0"
+    },
+    {
+      "path": "src/assets/images/buttoncross.png",
+      "sha1": "2c7498b93eca49d23ea6705ef144f664fe0d9db3"
+    },
+    {
+      "path": "src/assets/images/buttonexit.png",
+      "sha1": "41c7aefeb8426ebbeac25d684d3d65ec3f9758b7"
+    },
+    {
+      "path": "src/assets/images/buttongettext.png",
+      "sha1": "748d97343d82c8391d1474f23467b30af629ff13"
+    },
+    {
+      "path": "src/assets/images/buttonhome.png",
+      "sha1": "556cc4a70bec48101166097fa6157296343de39d"
+    },
+    {
+      "path": "src/assets/images/dastaanmainscreen.png",
+      "sha1": "23159318075e67f22c98b9f0a85ce2850b920391"
+    },
+    {
+      "path": "src/assets/images/dastanromanurdu.png",
+      "sha1": "88198cfc42bd8b23b63fb8a5f0cb4f69124fcf87"
+    },
+    {
+      "path": "src/assets/images/dastansplashfirst.png",
+      "sha1": "310a5349db2c658331e7878048ad32fca68e1a16"
+    },
+    {
+      "path": "src/assets/images/dastansplashsecond.png",
+      "sha1": "cdffd19f75310946bac9a80589eb2b264fc8d8d6"
+    },
+    {
+      "path": "src/assets/images/dastanurdu.png",
+      "sha1": "750ddb79b5ba7472bd28414bd4a977a0c3dd0c90"
+    },
+    {
+      "path": "src/assets/images/extractscreeninner.png",
+      "sha1": "d7510cb84f4cea578d7679cd880a25760bcf3db3"
+    },
+    {
+      "path": "src/assets/images/extractscreeninnertext.png",
+      "sha1": "fc2af750ef7ffdb2ea6ac7414e75e8d572d0c4e0"
+    },
+    {
+      "path": "src/assets/images/framecamera.png",
+      "sha1": "b243bc2942918cb9fbdb187ca67f90713d141237"
+    },
+    {
+      "path": "src/assets/images/framegallery.png",
+      "sha1": "87ed7583436e3ee7ea8a6552644ed11e553d5636"
+    },
+    {
+      "path": "src/assets/images/imagepreviewscreen.png",
+      "sha1": "d2f755bab1453313e914ad2ed4e9bd2fafd095dc"
+    },
+    {
+      "path": "src/assets/images/innerextractedtextscreen.png",
+      "sha1": "4fc8a4e47ea9ad9789c1e653c4582c1e551c47e0"
+    },
+    {
+      "path": "src/assets/images/leftbottombg.png",
+      "sha1": "61ea625c2f7e746aa3f5b7fbe7e70945d476c7d4"
+    },
+    {
+      "path": "src/assets/images/ncllogo.png",
+      "sha1": "9324c36f32454f783bfb6d84e4f5fe2bbc6f8e70"
+    },
+    {
+      "path": "src/assets/images/neduetlogo.png",
+      "sha1": "6496c40518fb1fedaf04595b3a7ed746f07a061e"
+    },
+    {
+      "path": "src/assets/images/righttopbg.png",
+      "sha1": "558c9fb58c27aa8a83309bc7e1d88f9b28f29545"
+    },
+    {
+      "path": "src/assets/images/suggestionfirst.png",
+      "sha1": "4a7172b6e1c744bd1065f684f1660530e4046c4a"
+    },
+    {
+      "path": "src/assets/images/suggestionsecond.png",
+      "sha1": "390c60637d11fce3dcb5071f772f5b4de968ca19"
+    },
+    {
+      "path": "src/assets/videos/splash_video.mp4",
+      "sha1": "8c28287b687b40a63dc3115fb43f308cc69ac2f3"
+    },
+    {
+      "path": "src/assets/videos/splash_video_new.mp4",
+      "sha1": "bfa1c7ac75f3dafd9765fbfb09282673f22ee2c4"
+    }
+  ]
+}
