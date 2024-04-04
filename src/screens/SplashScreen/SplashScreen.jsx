@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from 'react';
-import { StyleSheet, View, SafeAreaView, Dimensions, Animated } from 'react-native';
+import { StyleSheet, View, SafeAreaView, Dimensions, Animated, Image, Text } from 'react-native';
 import Video from 'react-native-video';
 
 const SplashScreen = ({ navigation }) => {
   const slideInFromRight = useRef(new Animated.Value(Dimensions.get('window').width)).current;
+  const slideInFromRight2 = useRef(new Animated.Value(Dimensions.get('window').width)).current;
   const fadeAnimTopImage = useRef(new Animated.Value(0)).current;
   const slideInFromLeft = useRef(new Animated.Value(-Dimensions.get('window').width)).current;
+  const slideInFromLeft2 = useRef(new Animated.Value(-Dimensions.get('window').width)).current;
 
   useEffect(() => {
 
@@ -15,6 +17,14 @@ const SplashScreen = ({ navigation }) => {
         {
           toValue: 0,
           duration: 2000,
+          useNativeDriver: false,
+        }
+      ),
+      Animated.timing(
+        slideInFromRight2,
+        {
+          toValue: 0,
+          duration: 1000,
           useNativeDriver: false,
         }
       ),
@@ -34,6 +44,14 @@ const SplashScreen = ({ navigation }) => {
           useNativeDriver: false,
         }
       ),
+      Animated.timing(
+        slideInFromLeft2,
+        {
+          toValue: 0,
+          duration: 1000,
+          useNativeDriver: false,
+        }
+      ),
     ]).start();
 
     // Navigation after 3 seconds
@@ -44,7 +62,7 @@ const SplashScreen = ({ navigation }) => {
     // Clear the timeout when the component unmounts
     return () => clearTimeout(timer);
 
-  }, [slideInFromRight, fadeAnimTopImage, slideInFromLeft]);
+  }, [slideInFromRight, fadeAnimTopImage, slideInFromLeft, slideInFromRight2, slideInFromLeft2]);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -58,12 +76,11 @@ const SplashScreen = ({ navigation }) => {
 
 
       <View style={styles.centerText}>
-        <Video
-          source={require('./../../assets/videos/splash_video_neww.mp4')}
-          style={[styles.video, { zIndex: 1 }]}
-          resizeMode="cover"
-          controls={false}
+        <Animated.Image
+          source={require('../../assets/images/splash_images_horizontal.png')}
+          style={{ width: '60%', height: '30%', marginBottom: 8, marginTop: 8, transform: [{ translateX: slideInFromRight2 }] }}
         />
+        <Animated.Text style={{ color: '#000', fontSize: 18, transform: [{ translateX: slideInFromLeft2 }] }}>Bringing Urdu into Digital Age</Animated.Text>
       </View>
 
 
