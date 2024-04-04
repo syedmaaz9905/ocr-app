@@ -59,7 +59,7 @@ const SplashScreen = ({ navigation }) => {
 
       <View style={styles.centerText}>
         <Video
-          source={require('./../../assets/videos/splash_video.mp4')}
+          source={require('./../../assets/videos/splash_video_neww.mp4')}
           style={[styles.video, { zIndex: 1 }]}
           resizeMode="cover"
           controls={false}
