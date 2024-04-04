@@ -33,33 +33,11 @@ const MainScreen = ({ navigation }) => {
   // Logo useEffect to trigger animations
   useEffect(() => {
     Animated.parallel([
-      animateLogo(fadeInFromLeft, -100, 0, 1000),  // Pan in from left
-      animateLogo(fadeInFromBottom, 100, 0, 1000), // Pan in from bottom
-      animateLogo(fadeInFromRight, 100, 0, 1000),  // Pan in from right
+      animateLogo(fadeInFromLeft, -100, 0, 1000),  
+      animateLogo(fadeInFromBottom, 100, 0, 1000), 
+      animateLogo(fadeInFromRight, 100, 0, 1000), 
     ]).start();
   }, [fadeInFromLeft, fadeInFromBottom, fadeInFromRight]);
-
-
-
-
-
-
-  // const folderPath = RNFS.DocumentDirectoryPath + "/assets/suggestionfirst.png";
-  // function testingFunction() {
-  //   const DEFAULT_IMAGE = folderPath;
-  //   console.log("HERE")
-  //   console.log(DEFAULT_IMAGE)
-  //   ImgToBase64.getBase64String(DEFAULT_IMAGE)
-  //     .then((base64String) => {
-  //       let base_64_data = `data:image/png;base64,${base64String}`;
-  //       console.log(base_64_data);
-  //       Toast.show("working", Toast.LONG);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //       Toast.show(err.message, Toast.LONG);
-  //     });
-  // }
 
   function testingFunction() {
     let imagePath = null;
@@ -70,8 +48,6 @@ const MainScreen = ({ navigation }) => {
 
       .then(resp => {
         imagePath = resp.path();
-        // console.log(resp)
-
         return resp.readFile("base64");
       })
       .then(base64Data => {
@@ -79,18 +55,8 @@ const MainScreen = ({ navigation }) => {
         console.log(base_64_data);
 
         Toast.show("working", Toast.LONG);
-        // navigation.navigate('ImagePreview', {image: base_64_data})
-        // console.log(base64Data);
-
-        // return fs.unlink(imagePath);
       });
   }
-
-
-
-
-
-
 
   return (
     <View style={styles.container}>
@@ -110,7 +76,7 @@ const MainScreen = ({ navigation }) => {
         ]}
       >
         <Image
-          source={require('./../../assets/images/dastaanmainscreen.png')}
+          source={require('./../../assets/images/dasboard_image_new.png')}
           style={styles.image}
           resizeMode="contain"
         />
@@ -291,14 +257,6 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#000000',
   },
-  // innerImageThirdRowMain: {
-  //   display: 'flex',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  //   width: 130,
-  //   height: 150,
-  //   backgroundColor: '#fff',
-  // },
   innerImageThirdRow: {
     width: 100,
     height: 150,
